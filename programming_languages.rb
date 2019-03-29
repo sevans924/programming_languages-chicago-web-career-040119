@@ -17,7 +17,11 @@ languages.each do |oo_functional, language_hash|
           new_hash[language][attribute] = value
         end
      new_hash[language][:style] = []
-      new_hash[language][:style] << oo_functional
+      if languages[oo_functional] == :oo && :functional
+        new_hash[language][:style] << :oo && :functional
+      else
+        new_hash[language][:style] << oo_functional
+      end
       #new_hash[:javascript][:style] << :oo
 
 
