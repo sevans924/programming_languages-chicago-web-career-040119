@@ -18,7 +18,7 @@ languages.each do |oo_functional, language_hash|
         end
      new_hash[language][:style] = []
       if languages[:oo] && languages[:functional].include?(language)
-        new_hash[language][:style] << [:oo, :functional]
+        new_hash[language][:style] << [:oo, :functional].flatten
       else
         new_hash[language][:style] << oo_functional
       end
