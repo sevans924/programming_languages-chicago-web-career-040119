@@ -26,5 +26,3 @@ end
   new_hash
   binding.pry
 end
-
-
