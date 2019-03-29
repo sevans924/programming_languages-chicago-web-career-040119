@@ -14,7 +14,7 @@ languages.each do |oo_functional, language_hash|
         new_hash[language] = {}
       end
       if new_hash[language][attribute].nil?
-          new_hash[language][attribute] = str_value
+          new_hash[language][attribute] = value
         end
      new_hash[language][:style] = []
       new_hash[language][:style] << oo_functional
