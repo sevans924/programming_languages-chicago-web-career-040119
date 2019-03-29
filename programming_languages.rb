@@ -18,6 +18,7 @@ languages.each do |oo_functional, language_hash|
         end
      new_hash[language][:style] = []
       new_hash[language][:style] << oo_functional
+      new_hash[:javascript][:style] << :oo
 
 
     end
